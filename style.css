@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Poppins:wght@600&display=swap');
+/* font-family: 'Noto Sans', sans-serif;
+font-family: 'Poppins', sans-serif; */
+
+body{
+    background-color:rgb(243, 241, 239);
+}
+*
+{
+  padding: 0;
+  margin: 0;
+}
+nav{
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: bold;
+    display: flex;
+    height: 50px;
+    font-size: 20px;
+    background-color:rgb(248, 217, 244);
+
+}
+nav li a {
+    text-decoration: none;
+    list-style: none;
+    color: black;
+    transition: all;
+    transition-duration: 500ms;
+}
+nav li a:hover{
+    
+    color:rgb(194, 45, 194);
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 23px;
+}
+
+nav ul{
+    display: flex;
+}
+
+nav ul li{
+  
+    list-style: none;
+    margin: 10px 23px;
+
+}
+.container{
+    min-height: 100vh;
+    /* border: 2px solid black; */
+    font-family: 'Poppins';
+    /* background-color: orange; */
+    max-width: 80vw;
+    margin: auto;
+}
+
+.container h1 , h2{
+    margin: 23px 0px;
+}
+
+.container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.container form label{
+    font-size:25px;
+   
+}
+.container select , input{
+    background-color: rgb(176, 168, 168);
+    
+}
+.container form input[type='number'],select,button{
+    font-size: 25px;
+    margin-bottom: 23px  ;
+    width: 29vw;
+}
+
+.btn{
+    cursor: pointer;
+    width: 144px;
+    padding: 5px 9px;
+    font-size: 20px;
+    background-color: rgb(245, 155, 222);
+    color: black;
+    border-radius: 13px;
+
+}
+
+.output {
+    display: none;
+}
+.output table{
+    width: 50vw;
+    text-align: center;
+    border: 2px solid black;
+    font-size: 20px;
+}
+
+footer{
+   text-align: center;
+   font-family: 'Poppins', sans-serif;
+   background-color: black;
+   color: white;
+   margin-top: 13px;
+
+}
+
+
+@media (max-width:600px) {
+  
+    nav{
+        height: 25vh;
+        flex-direction: column;
+        font-size: 18px;
+    }
+    nav ul{
+        justify-content: center;
+    }
+    nav ul li{
+        margin: 5px 13px;
+    }
+    .container{
+        max-width: 95vw;
+
+    }
+     .logo{
+       font-size: 30px;
+    } 
+    .container form input[type='number'],select,button{
+        width: 80vw;
+    }
+
+}
